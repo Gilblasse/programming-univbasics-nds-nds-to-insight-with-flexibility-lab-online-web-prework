@@ -50,10 +50,10 @@ def gross_per_studio(collection)
   collection.each do |movie|
     if all_movies_grand_total[movie[:studio]]
       all_movies_grand_total[movie[:studio]] = movie[:worldwide_gross]
-    end
     else
       all_movies_grand_total[movie[:studio]] += movie[:worldwide_gross]
     end
+    binding.pry
   end
   
   # GOAL: Given an Array of Hashes where each Hash represents a movie,
