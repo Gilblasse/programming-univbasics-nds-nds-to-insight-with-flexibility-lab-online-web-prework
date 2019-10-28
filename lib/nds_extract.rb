@@ -49,10 +49,10 @@ def gross_per_studio(collection)
   all_movies_grand_total = {}
   
   collection.each do |movie|
-    movie[:studio]
+    binding.pry
+    all_movies_grand_total{movie[:studio]}
   end
   
-  myarray["Alpha Films"] => 40
   
   # GOAL: Given an Array of Hashes where each Hash represents a movie,
   # return a Hash that includes the total worldwide_gross of all the movies from
