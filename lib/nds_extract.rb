@@ -46,11 +46,10 @@ end
 
 def gross_per_studio(collection)
   
-  all_movies_grand_total = {:total_worldwide_gross => 0}
+  all_movies_grand_total = {}
   
   collection.each do |movie|
-    if movie[:studio] =  
-    all_movies_grand_total[:total_worldwide_gross] += movie[:worldwide_gross]
+    movie[:studio]
   end
   
   myarray["Alpha Films"] => 40
