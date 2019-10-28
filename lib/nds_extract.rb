@@ -50,7 +50,6 @@ def gross_per_studio(collection)
   
   collection.each do |movie|
     all_movies_grand_total[movie[:studio]] = movie[:worldwide_gross]
-    binding.pry
   end
   
   
