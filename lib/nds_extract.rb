@@ -52,9 +52,8 @@ def gross_per_studio(collection)
       all_movies_grand_total[movie[:studio]] = movie[:worldwide_gross]
     end
     else
-      
+      all_movies_grand_total[movie[:studio]] += movie[:worldwide_gross]
     end
-  #  all_movies_grand_total[movie[:studio]] = movie[:worldwide_gross]
   end
   
   # GOAL: Given an Array of Hashes where each Hash represents a movie,
